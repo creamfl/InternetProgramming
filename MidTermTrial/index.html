@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of authors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Information About Authors</h1>
+    <div class="filter-container">
+      <input type="text" id="filter-name" placeholder="Filter by Name" />
+      <select id="filter-nationality">
+        <option value="">All Nationalities</option>
+      </select>
+      <label> <input type="checkbox" id="filter-alive" /> Alive </label>
+      <input
+        type="number"
+        id="filter-year-active"
+        placeholder="Filter by Active Year"
+        min="0"
+      />
+    </div>
+
+    <div class="author-header-table">
+      <div class="author-header" data-field="id">
+        ID <span id="sort-id">↑↓</span>
+      </div>
+      <div class="author-header" data-field="name">
+        Name <span id="sort-name">↑↓</span>
+      </div>
+      <div class="author-header" data-field="birth_date">
+        Birth Date <span id="sort-birth_date">↑↓</span>
+      </div>
+      <div class="author-header" data-field="alive">Alive</div>
+      <div class="author-header" data-field="age">
+        Age <span id="sort-age">↑↓</span>
+      </div>
+      <div class="author-header" data-field="nationality">
+        Nationality <span id="sort-nationality">↑↓</span>
+      </div>
+      <div class="author-header" data-field="bibliography">
+        Bibliography <span id="sort-bibliography">↑↓</span>
+      </div>
+      <div class="author-header" data-field="years_active">
+        Years active <span id="sort-years_active">↑↓</span>
+      </div>
+    </div>
+
+    <div id="author-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
