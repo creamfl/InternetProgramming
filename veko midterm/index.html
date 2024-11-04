@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Information About Authors</title>
+</head>
+<body>
+    <h1>Information About Authors</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <input type="text" id="name-filter" placeholder="Search by Name">
+        <select id="nationality-filter">
+            <option value="">All Nationalities</option>
+        </select>
+        <label>
+            <input type="checkbox" id="alive-filter"> Show Alive Only
+        </label>
+    </div>
+
+    <div class="author-header-table">
+        <div class="author-header">ID <span id="sort-id">sort</span></div>
+        <div class="author-header">Name <span id="sort-name">sort</span></div>
+        <div class="author-header">Alive <span id="sort-alive">sort</span></div>
+        <div class="author-header">Age <span id="sort-age">sort</span></div>
+        <div class="author-header">Nationality <span id="sort-nationality">sort</span></div>
+        <div class="author-header">Bibliography <span id="sort-bibliography">sort</span></div>
+        <div class="author-header">Years Active <span id="sort-yearsActive">sort</span></div>
+    </div>
+    <div id="author-container">
+        <!-- Author information will be dynamically inserted here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
